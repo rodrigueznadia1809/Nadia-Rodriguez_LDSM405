@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eduardo Santana">
+        <meta name="keywords" content="desarrollo web, ingeniería de software">
+        <title>Relaciones</title>
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <body>
+        <h1>RELACIONES</h1>
+        <section class="contenedor-principal">
+            <main class="contenedor-centralizado">
+                <fieldset class="auto-corredor">
+                    <legend>Auto-Corredor</legend>
+                    <section class="seleccion-auto">
+                        <label>Auto</label>
+                        <select id="auto">
+                            <option value="auto1">Ferrari</option>
+                            <option value="auto2">McLaren</option>
+                            <option value="auto3">Red Bull</option>
+                            <option value="auto4">Cadillac</option>
+                        </select>
+                    </section>
+                    <section class="seleccion-corredor">
+                        <label>Corredor</label>
+                        <select id="corredor">
+                            <option value="corredor1">Charles Leclerc</option>
+                            <option value="corredor2">Lando Norris</option>
+                            <option value="corredor3">Max Verstappen</option>
+                            <option value="corredor4">Sergio Perez</option>
+                        </select>
+                    </section>
+                </fieldset>
+
+                <fieldset class="auto-corredor"> 
+                    <legend>Equipos</legend>
+                    <section class="seleccion-auto">
+                        <label>Piloto 1</label>
+                        <select id="auto-2">
+                            <option value="piloto1">Sergio Perez</option>
+                            <option value="piloto1">Lando Norris</option>
+                            <option value="piloto1">Carlos Sainz</option>
+                            <option value="piloto1">Charles Leclerc</option>
+                        </select>
+                    </section>
+                    <section class="seleccion-escuderia">
+                        <label>Piloto 2</label>
+                        <select id="escuderia">
+                            <option value="piloto2">Valtteri Bottas</option>
+                            <option value="piloto2">Oscar Piastri</option>
+                            <option value="piloto2">Alexander Albon</option>
+                            <option value="piloto2">Lewis Hamilton</option>
+                        </select>
+                    </section>
+                </fieldset>
+            </main>
+            <aside class="menu-lateral">
+                <h2>MENU</h2>
+                <ol>
+                    <li><a href="corredor.html">Corredor</a></li>
+                    <li><a href="Relaciones.html">Relación</a></li>
+                    <li><a href="Escuderia.html">Escuderías</a></li>
+                    <li><a href="Autos.html">Auto</a></li>
+                </ol>
+            </aside>
+        </section>
+        <footer class="pie-pagina">
+            <h2 class="nombre">Nadia Rocío Rodríguez Hernández</h2>
+            <button id="guardar" onclick="Guardar_Relaciones()">Guardar</button>
+        </footer>
+        <script src="JS/Guardar_Relaciones.js"></script>
+    </body>
+</html>

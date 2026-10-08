@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Eduardo Santana">
+        <meta keywords="desarrollo web, ingeniería de software">
+        <title>Escuderia</title>
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <body>
+         <h1>ESCUDERIA</h1>
+        <div class="contenedor-principal">
+            <main class="datos-descrip">
+                <div id="Nom"></div>
+                <fieldset class="Nom-Com">
+                <div><label>Nombre: </label>
+                    <input type="text" id="nombre">
+                </div>
+                <div id="Desc">
+                <label>Descripción: </label>
+                    <textarea id="comentarios" rows="20" cols="110"></textarea>
+                </div>
+                </fieldset>
+            </main>
+            <aside class="menu-lateral">
+                <h2>MENU</h2>
+                <ol>
+                    <li><a href="corredor.html">Corredor</a></li>
+                    <li><a href="Relaciones.html">Relaciónn</a></li>
+                    <li><a href="Escuderia.html">Escuderías</a></li>
+                    <li><a href="Autos.html">Auto</a></li>
+                </ol>
+            </aside>
+        </div>
+        <footer class="pie-pagina">
+            <h2 class="nombre">Nadia Rocío Rodríguez Hernández</h2>
+            <button id="guardar" onclick="Guardar_Escuderia()">Guardar</button>
+        </footer>
+        <script src="JS/Guardar_Escuderia.js"></script>
+    </body>
+</html>

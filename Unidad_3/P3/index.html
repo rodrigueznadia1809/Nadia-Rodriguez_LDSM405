@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Variables Objeto</title>
+</head>
+<body>
+    <header class="p-5 bg-danger-subtle text-black text-center">
+        <h1>Calculadora de Conversión</h1>
+    </header>
+    <h5>Convertidor de unidades</h5>
+    <form enctype="multipar/form-data" method="post">
+        <label>Convertir:</label>
+        <input type="text" id="operador"><br>
+        <select id="op">
+            <option value="1">Miligramos a Gramos</option>
+            <option value="2">Gramos a Kilogramos</option>
+            <option value="3">Kilogramos a Gramos</option>
+            <option value="4">Gramos a Miligramos</option>
+            <option value="5">Miligramos a Kilogramos</option>
+            <option value="6">Kilogramos a Miligramos</option>
+        </select>
+    <input type="button" id="btncalcular" class="btn-danger" value="Calcular" onclick="calcular();">
+    </form>
+ 
+</fieldset>
+<article>
+    <p id="resultado"></p>
+   
+</article>
+
+<article>
+    <h5>Calculador de IMC</h5>
+    <label>Kg: </label>
+    <input type="text" id="kg"><br>
+    <label>Altura: </label>
+    <input type="text" id="a">
+    <input type="button" id="btncalcular" class="btn-danger" value="Calcular" onclick="calcu();">
+
+</article>
+    <article>
+        <p id="res"></p>
+    </article>
+
+<article>
+    <h3>Condicionales y ciclos</h3>
+    <label>Número:</label>
+    <input type="text" id="f"><br>
+    <input type="button" id="btncalcular" class="btn-danger" value="Calcular" onclick="factorial();">
+</article> 
+<article>
+    <p id="fac"></p>
+</article> 
+<artice>
+    <h5>Ordenar numeros</h5>
+    <form enctype="multipar/form-data" method="post">
+        <label>Numero 1:</label>
+        <input type="text" id="N1"><br>
+        <label>Numero 2:</label>
+        <input type="text" id="N2"><br>
+        <label>Numero 3:</label>
+        <input type="text" id="N3"><br>
+    <input type="button" id="btncalcular" class="btn-danger" value="Ordenar" onclick="ordena();">
+    </form>    
+</artice> 
+<article>
+    <p id="orden"></p>
+</article> 
+    <script src="js/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body { 
+    font-family: Tahoma, 
+    sans-serif; 
+    padding: 20px; 
+}
+
+form { 
+    max-width: 350px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+    }
+input, button {
+    padding: 8px;
+    font-size: 14px; 
+}
+button { 
+    background-color: #2563eb;
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+.credencial {
+    max-width: 380px;
+    background: white;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+.credencial h2 { 
+    color: #1e3a8a; 
+    margin-top: 0;
+}
+.dato { 
+    margin-bottom: 8px; 
+}
+.etiqueta { 
+    font-weight: bold; 
+    color: #4b5563; 
+}

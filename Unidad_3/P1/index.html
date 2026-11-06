@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<main lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .fakeimg {
+            height: 400px;
+            background: #88b388;
+        }
+    </style>
+</head>
+    <header>
+        <article class="p-5 bg-success text-white text-center">
+            <h1>Programación web con JavaScrip</h1>
+            <p>Aplicación de Estilos con Bootstrap</p>
+        </article>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Básicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Funciones y Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ciclos</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="container mt-5">
+            <div class="row">
+                <aside class="col-sm-4">
+                <h2>Básicos</h2>
+                <h5>Uso de JS</h5>
+                <article class="fakeimg">
+                    <ul>
+                        <li>Directo en html</li>
+                        <li>Archivo Externo</li>
+                        <li>Por atributo</li>
+                    </ul>
+                    <hr>
+                    <article>
+                        <h5>Uso de: </h5>
+                        <ul>
+                            <li>Alert y prompt</li>
+                            <li>document.write</li>
+                            <li>document.getElementByid, innerHTML</li>
+                        </ul>
+                        <h5>Intro a JS</h5>
+                        <p id="imprimir"></p>
+                        <p id="modulo"></p>
+                    </article>
+                </article>
+                <h3 class="mt-4">Eventos y Funciones</h3>
+                <p>Conceptos: onchange, onclick, function ()</p>
+                <form action="" method="post"  id="formulario" name="formulario">
+                    <h4>Seleccione un Villano para pelear</h4>
+                    <select id="villanos" size="1" onchange="selectVillano();">
+                        <option value="ManBat">Man-Bat</option>
+                        <option value="Poison Ivy">Poison Ivy</option>
+                        <option value="Clay face">Clay face</option>
+                    </select>
+                </form>
+                <h4 id="saludar"></h4>
+                <article id="img"></article>
+                <hr>
+                <article>
+                    <h2>Calculadora</h2>
+                    <form action="" method="post"  id="calculadora" name="calculadora">
+                        <h4>elija numeros para hacer cálculos</h4>
+                        <input type="text" name="n1"><br>
+                        <input type="text" name="n2"><br>
+                        <select id="operador" size="1" name="operador">
+                            <option value="suma">+</option>
+                            <option value="resta">-</option>
+                            <option value="division">/</option>
+                            <option value="multiplacion">*</option>
+                            <option value="modulo">%</option>
+                        </select>
+                        <button type="button" onclick="calcular();"class="btn btn-warning" id="calcular">Calcular</button>
+                    </form>
+                    <p class="alert alert-success" id="resultado"></p>
+                </article>
+                <hr class="d-sm-none">
+                </aside>
+              <section class="col-sm-8">
+                <h2>CONTENIDOS DESDE JS</h2>
+                <h5>innerHTML, getElementByid, src</h5>
+                <article class="fakeimg">
+                    <p id="texto"></p>
+                    <img id="img" src="img/la foto.JPG" width="350"height="300">
+                    <p id="informacion"></p>
+                </article>
+                <h2 class="mt-5">CONDICIONALES</h2>
+                <h5>CONCEPTOS:</h5>
+                <article class="fakeimg">
+                    <article id="condicional">
+                        <p id="saludo"></p>
+                        <p id="estatus"></p>
+                    </article>
+                    <artcile id="logicos">
+                        <p id="resultado"></p>
+                    </artcile>
+               </article>
+               
+              </section>
+            </div>
+        </article>
+        </main>
+         
+          <footer class="mt-5 p-4 text-white text-center" id="pie">
+            <p>Nadia Rodríguez -Prácticas de JS</p>
+          </footer>
+          <!--Scripts-->
+          <script>
+                /*
+               alert("Hola desde un script");
+                var n1=prompt("Registra un número decimal");
+                var n1F=parseFloat(n1);
+                var n2=prompt("Registra otro número decimal");
+                var n2F=parseFloat(n2);
+                document.write('<h1 class="text-secondary"> Texto desde un write </h1>');
+                document.write("El resultado de la suma es: "+(n1F+n2F));
+                */
+          </script>
+          <script src="js/script.js"></script>
+          <script src="js/condicional.js"></script>
+          <script src="js/funciones.js"></script>
+         
+ 
+    </body>
+</html>
+         
+   
+ 
+ 
+   
+</body>
+</html>

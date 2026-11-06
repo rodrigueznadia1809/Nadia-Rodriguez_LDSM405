@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & Boba - Registro de Pedidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<main>
+    <h2>Nuevo Pedido</h2>
+    <form id="formPedido">
+        <label for="cliente">Nombre del cliente:</label>
+        <input type="text" id="cliente" placeholder="Ej. Anahí Torres" required>
+        <label for="bebida">Selecciona una bebida ($65 c/u):</label>
+        <article class="grupo-inline">
+            <select id="bebida">
+                <option value="Iced Caramel Macchiato">Iced Caramel Macchiato</option>
+                <option value="Matcha Latte Fresa">Matcha Latte Fresa</option>
+                <option value="Taro Boba Tea">Taro Boba Tea</option>
+                <option value="Cold Brew Vainilla">Cold Brew Vainilla</option>
+            </select>
+            <button type="button" class="btn-secundario" onclick="agregarBebida();">+ Añadir</button>
+        </article>
+    <hr>
+    <h3>Bebidas agregadas:</h3>
+    <ul id="listaBebidas"></ul>
+    <label for="descuento">Cupón / Descuento:</label>
+    <select id="descuento">
+        <option value="0">Sin descuento (0%)</option>
+        <option value="0.10">Estudiante con credencial (10%)</option>
+        <option value="0.20">Promo Miércoles (20%)</option>
+    </select>
+    <button type="button" class="btn-primario" onclick="procesaEnviar();">Calcular y Generar Ticket</button>
+    </form>
+</main>
+<script src="js/funciones.js"></script>
+</body>
+</html>

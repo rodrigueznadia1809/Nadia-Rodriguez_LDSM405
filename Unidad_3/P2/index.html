@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Arreglos con JS</title>
+</head>
+<body>
+    <header class="container-fluid p-5 bg-danger-subtle text-black text-center">
+        <h1>Manejo de Arreglos</h1>
+        <p>LLenado, impresión, funciones de arreglos</p> 
+    </header>
+    <section class="container mt-5">
+        <div class="row">
+          <article class="col-sm-4 auto-mx">
+            <h3>Definición de Arreglos</h3>
+            <article id="imprimir"></article>
+          </article>
+          <article class="col-sm-4">
+            <h3>Definición por índice </h3>
+            <article id="fecha">
+                <form action="#">
+                    <label>Selecione un número para día</label><input type="number" min="1" max="7" id="dia"><br>
+                    <label>Selecione un número para mes</label><input type="number" min="1" max="12" id="m"><br>
+                    <button class="btn btn-warning" onclick="fechas()">Definir fecha</button>
+                </form>
+            </article>
+            <hr>
+            <p id="impdias"></p>
+            <p id="impmes"></p>
+          </article>
+          <article class="col-sm-4">
+            <h3>Llenado e impresión de un arreglo</h3>        
+            <button class="btn btn-warning" onclick="cargar()">Capturar 5 sueldos</button>
+            <button class="btn btn-success" onclick="mostrar()">Mostrar sueldos</button>
+            <p id="impsueldos"></p>
+        </article>
+        </div>
+    </section>
+    <section class="container mt-5 bg-danger-subtle">
+        <h2 class="text-center">Recorridos con ciclos diferentes</h2>
+        <article class="text-center">
+            <button class="btn btn-warning" onclick="recorridoForin()">For In</button>
+            <button class="btn btn-warning" onclick="imprimir()">For each</button>
+            <button class="btn btn-warning" onclick="cortar()">Cortar</button>
+            <button class="btn btn-warning" onclick="poner()">Poner</button>
+            <button class="btn btn-warning" onclick="quitar()">Quitar</button>
+            <button class="btn btn-warning" onclick="arreglo_random()">Random</button>
+            <hr>
+            <article>
+                <h3>Impresiones</h3>
+                <article id="impForin"></article>
+                <article id="impForeach"></article>
+                <article id="impCompleto"></article>
+                <article id="impCortado"></article>
+                <article id="impVerduras"></article>
+                <article id="impRandom"></article>
+            </article>
+        </article>
+   </section>
+   <section class="container mt-5 bg-danger-subtle">
+        <article>
+            <h3>Arreglo Bidimensional</h3>
+            <button class="btn btn-success" onclick="bidimensional_definicion()">Arreglos Bidimensionales</button>
+        </article>
+    </section>
+    <script src="js/arreglos.js"></script>
+</body>
+</html>

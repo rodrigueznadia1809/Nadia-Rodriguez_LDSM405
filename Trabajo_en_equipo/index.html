@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Geométrica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <article class="container">
+        <h1>Calculadora Geométrica</h1>
+       
+       
+        <article class="card selector-modo">
+            <label for="modo-calculo">¿Qué deseas calcular?</label>
+            <select id="modo-calculo" onchange="cambiarModo()">
+                <option value="volumen">Volumen</option>
+                <option value="area">Área</option>
+            </select>
+        </article>
+ 
+       
+        <section id="seccion-volumen" class="card">
+            <h2>Cálculo de Volumen</h2>
+            <label for="figura-volumen">Selecciona una figura:</label>
+            <select id="figura-volumen" onchange="actualizarInputsVolumen()">
+                <option value="prisma-triangular">Prisma Triangular</option>
+                <option value="prisma-rectangular">Prisma Rectangular</option>
+                <option value="esfera">Esfera</option>
+            </select>
+            <div id="inputs-volumen"></div>
+            <button onclick="calcularVolumen()">Calcular Volumen</button>
+            <p id="resultado-volumen" class="resultado"></p>
+        </section>
+ 
+       
+        <section id="seccion-area" class="card" style="display: none;">
+            <h2>Cálculo de Área</h2>
+            <label for="figura-area">Selecciona una figura:</label>
+            <select id="figura-area" onchange="actualizarInputsArea()">
+                <option value="trapecio">Trapecio</option>
+                <option value="hexagono">Hexágono</option>
+                <option value="triangulo-rectangulo">Triángulo Rectángulo</option>
+            </select>
+            <div id="inputs-area"></div>
+            <button onclick="calcularArea()">Calcular Área</button>
+            <p id="resultado-area" class="resultado"></p>
+        </section>
+ 
+       
+        <section class="card text-center">
+            <button onclick="abrirHistorial()" class="btn-secondary">Ver Historial en otra pantalla</button>
+        </section>
+    </article>
+ 
+    <script src="js/funciones.js"></script>
+</body>
+</html>
